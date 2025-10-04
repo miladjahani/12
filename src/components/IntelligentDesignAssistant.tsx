@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Label } from './ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { Textarea } from './ui/textarea';
-import { Slider } from './ui/slider';
-import { Badge } from './ui/badge';
-import { Progress } from './ui/progress';
-import { Separator } from './ui/separator';
-import { Alert, AlertDescription, AlertTitle } from './ui/alert';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Textarea } from '@/components/ui/textarea';
+import { Slider } from '@/components/ui/slider';
+import { Badge } from '@/components/ui/badge';
+import { Progress } from '@/components/ui/progress';
+import { Separator } from '@/components/ui/separator';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { 
   Wand2, 
   Target, 
@@ -55,7 +55,7 @@ import {
   Bar
 } from 'recharts';
 import { motion, AnimatePresence } from 'motion/react';
-import { comprehensiveMaterialDatabase } from './ComprehensiveMaterialDatabase';
+import { comprehensiveMaterialDatabase } from '@/components/ComprehensiveMaterialDatabase';
 
 interface DesignRequirements {
   capacity: string;

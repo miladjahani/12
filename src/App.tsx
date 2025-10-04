@@ -1,34 +1,34 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Button } from "./components/ui/button";
-import { Input } from "./components/ui/input";
-import { Label } from "./components/ui/label";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-} from "./components/ui/card";
-import { Separator } from "./components/ui/separator";
+} from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./components/ui/tooltip";
-import { Progress } from "./components/ui/progress";
-import { Badge } from "./components/ui/badge";
+} from "@/components/ui/tooltip";
+import { Progress } from "@/components/ui/progress";
+import { Badge } from "@/components/ui/badge";
 import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "./components/ui/alert";
+} from "@/components/ui/alert";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "./components/ui/tabs";
+} from "@/components/ui/tabs";
 import {
   Settings,
   Calculator,
@@ -66,12 +66,12 @@ import {
   Pie,
   Cell,
 } from "recharts";
-import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-import ComprehensiveMaterialDatabase from "./components/ComprehensiveMaterialDatabase";
-import AdvancedCalculations from "./components/AdvancedCalculations";
-import ProfessionalReport from "./components/ProfessionalReport";
-import EnhancedBallCharging from "./components/EnhancedBallCharging";
-import IntelligentDesignAssistant from "./components/IntelligentDesignAssistant";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import ComprehensiveMaterialDatabase from "@/components/ComprehensiveMaterialDatabase";
+import AdvancedCalculations from "@/components/AdvancedCalculations";
+import ProfessionalReport from "@/components/ProfessionalReport";
+import EnhancedBallCharging from "@/components/EnhancedBallCharging";
+import IntelligentDesignAssistant from "@/components/IntelligentDesignAssistant";
 
 // Default values based on engineering standards
 const defaultValues = {
