@@ -1,24 +1,21 @@
-# Heap Master Pro
+# Heap Master Pro (Object-Oriented Rewrite)
 
-Heap Master Pro یک ابزار وب پیشرفته برای طراحی، محاسبه و بهینه‌سازی پدهای استخراج معدنی (Heap Leaching) است. این برنامه به مهندسان معدن و طراحان اجازه می‌دهد تا به سرعت ابعاد، حجم، تناژ و پارامترهای کلیدی دیگر را برای پدهای چند طبقه‌ای محاسبه و به صورت سه‌بعدی مشاهده کنند.
+This is a completely rewritten version of Heap Master Pro, designed with a modern, object-oriented architecture for improved performance, maintainability, and responsiveness.
 
-## ✨ ویژگی‌ها
+## ✨ Features
 
-- **طراحی پارامتریک:** ابعاد، شیب‌ها و مشخصات هر پد را به صورت جداگانه تنظیم کنید.
-- **مدیریت چند پد:** به راحتی پدهای جدید را در کنار یا روی پدهای موجود اضافه، حذف و مدیریت کنید.
-- **محاسبات دقیق:** محاسبه حجم با استفاده از فرمول پرزیموییدال، تناژ، مس قابل استحصال و مصرف اسید.
-- **بهینه‌سازی سیستم آبیاری:** طراحی و محاسبه سیستم لوله‌کشی و تعداد امیترها.
-- **نمایش سه‌بعدی تعاملی:** مشاهده و بررسی مدل سه‌بعدی پدها با قابلیت چرخش، زوم و جابجایی.
-- **خروجی PDF:** تهیه گزارش کامل از محاسبات و مشخصات پد انتخاب‌شده.
-- **رابط کاربری مدرن:** طراحی واکنش‌گرا با حالت تاریک و روشن.
+- **Object-Oriented Design:** Code is organized into `App`, `Pad`, and `View3D` classes for a clean and scalable structure.
+- **Responsive UI:** The interface is fully responsive and works seamlessly on desktops, tablets, and mobile devices.
+- **Optimized 3D Rendering:** The `Three.js` implementation is now more efficient, with proper initialization and object management.
+- **Robust Calculation Engine:** The core engineering calculations are preserved and integrated into the new architecture.
+- **Clean and Modern Interface:** The UI has been redesigned for a better user experience.
 
-## 🛠️ تکنولوژی‌ها
+## 🛠️ Technologies
 
-- **HTML5 / CSS3:** برای ساختار و استایل‌دهی برنامه.
-- **JavaScript (ES6+):** برای منطق اصلی برنامه و محاسبات.
-- **Three.js:** برای رندر و نمایش سه‌بعدی.
-- **jsPDF & html2canvas:** برای تولید خروجی PDF.
+- **HTML5 / CSS3 (with Flexbox & Grid)**
+- **JavaScript (ES6+ Classes)**
+- **Three.js**
 
-## 🚀 نحوه استفاده
+## 🚀 How to Use
 
-کافیست فایل `index.html` را در مرورگر خود باز کنید. برنامه به صورت کاملاً سمت کاربر (client-side) اجرا می‌شود و نیازی به سرور ندارد. به راحتی می‌توانید آن را بر روی GitHub Pages یا هر هاست استاتیک دیگری مستقر کنید.
+Simply open the `index.html` file in your web browser. The application is fully client-side and requires no backend or build process.
