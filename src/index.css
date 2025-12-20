@@ -1,0 +1,234 @@
+:root {
+    --bg-app: #17212b;
+    --bg-panel: #243447;
+    --bg-input: #1b2836;
+    --bg-hover: #3a4d61;
+    --primary: #5288c1;
+    --primary-dark: #4a7aaf;
+    --text: #ffffff;
+    --text-muted: #a3b8d1;
+    --border: #3a4d61;
+    --success: #10b981;
+    --accent: #f43f5e;
+    --warning: #f59e0b;
+    --sidebar-width: 350px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-app);
+    color: var(--text);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: var(--bg-app);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: var(--bg-panel);
+    border-bottom: 1px solid var(--border);
+    height: 60px;
+}
+
+.header h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.header-button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.header-button:hover {
+    color: var(--primary);
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    padding: 1rem;
+    overflow-y: auto;
+    background: var(--bg-panel);
+    border-right: 1px solid var(--border);
+}
+
+.panel-block {
+    margin-bottom: 1.5rem;
+}
+
+.panel-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.75rem;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(82, 136, 193, 0.3);
+}
+
+.input-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.boundary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.pad-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn-smart, .btn-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-smart {
+    background: var(--primary);
+    color: var(--text);
+}
+
+.btn-smart:hover {
+    background: var(--primary-dark);
+}
+
+.btn-delete {
+    background: var(--accent);
+    color: var(--text);
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.btn-delete:hover {
+    background: #c72a45; /* Darker accent */
+}
+
+/* Main Content */
+.main-content {
+    padding: 1.5rem;
+    background: var(--bg-app);
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.stat-card {
+    background: var(--bg-panel);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-card h4 {
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.stat-card p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-card .unit {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-left: 0.5rem;
+}
+
+/* 3D View */
+.three-d-view {
+    flex: 1;
+    min-height: 200px; /* Ensure it has a minimum height */
+    background: #000;
+}
