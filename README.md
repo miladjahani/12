@@ -1,24 +1,32 @@
 # Heap Master Pro
 
-Heap Master Pro یک ابزار وب پیشرفته برای طراحی، محاسبه و بهینه‌سازی پدهای استخراج معدنی (Heap Leaching) است. این برنامه به مهندسان معدن و طراحان اجازه می‌دهد تا به سرعت ابعاد، حجم، تناژ و پارامترهای کلیدی دیگر را برای پدهای چند طبقه‌ای محاسبه و به صورت سه‌بعدی مشاهده کنند.
+A web application for designing and calculating heap leaching pads in mining or civil engineering. This is a complete rewrite of the original vanilla JavaScript application, now using a modern React, Vite, and TypeScript stack.
 
-## ✨ ویژگی‌ها
+## Features
 
-- **طراحی پارامتریک:** ابعاد، شیب‌ها و مشخصات هر پد را به صورت جداگانه تنظیم کنید.
-- **مدیریت چند پد:** به راحتی پدهای جدید را در کنار یا روی پدهای موجود اضافه، حذف و مدیریت کنید.
-- **محاسبات دقیق:** محاسبه حجم با استفاده از فرمول پرزیموییدال، تناژ، مس قابل استحصال و مصرف اسید.
-- **بهینه‌سازی سیستم آبیاری:** طراحی و محاسبه سیستم لوله‌کشی و تعداد امیترها.
-- **نمایش سه‌بعدی تعاملی:** مشاهده و بررسی مدل سه‌بعدی پدها با قابلیت چرخش، زوم و جابجایی.
-- **خروجی PDF:** تهیه گزارش کامل از محاسبات و مشخصات پد انتخاب‌شده.
-- **رابط کاربری مدرن:** طراحی واکنش‌گرا با حالت تاریک و روشن.
+- 3D visualization of heap leach pads
+- Real-time calculation of key metrics
+- Pad management (add, delete, edit)
+- PDF export of pad reports
+- Telegram-inspired dark theme
 
-## 🛠️ تکنولوژی‌ها
+## Technologies Used
 
-- **HTML5 / CSS3:** برای ساختار و استایل‌دهی برنامه.
-- **JavaScript (ES6+):** برای منطق اصلی برنامه و محاسبات.
-- **Three.js:** برای رندر و نمایش سه‌بعدی.
-- **jsPDF & html2canvas:** برای تولید خروجی PDF.
+- React
+- Vite
+- TypeScript
+- Three.js
+- @react-three/fiber
+- TailwindCSS
+- jspdf
 
-## 🚀 نحوه استفاده
+## How to Run
 
-کافیست فایل `index.html` را در مرورگر خود باز کنید. برنامه به صورت کاملاً سمت کاربر (client-side) اجرا می‌شود و نیازی به سرور ندارد. به راحتی می‌توانید آن را بر روی GitHub Pages یا هر هاست استاتیک دیگری مستقر کنید.
+1.  Install dependencies:
+    ```bash
+    npm install
+    ```
+2.  Start the development server:
+    ```bash
+    npm run dev
+    ```
